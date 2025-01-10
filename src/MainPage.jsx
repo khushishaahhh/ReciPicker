@@ -15,6 +15,7 @@ import "swiper/css/pagination"; // Pagination module styles
 import SearchBar from "./SearchBar";
 import "./RecipeSearch.css";
 import { Link } from "react-router-dom";
+import { height, width } from "@fortawesome/free-solid-svg-icons/fa0";
 
 function Main() {
   const [dropdownRecipes, setDropdownRecipes] = useState(false);
@@ -32,7 +33,7 @@ function Main() {
   ];
 
   return (
-    <div>
+    <div className="body">
       {/* Navbar */}
       <nav className="navbar">
         <div className="logo-container">
@@ -96,31 +97,34 @@ function Main() {
       </nav>
 
       {/* Scrollable Content */}
-      <main>
+      <div className="main">
         {/* Swiper Section */}
-        <div className="slider section">
+        <div className="slidersection">
+          <div className="blurcon"></div>
           <Swiper
             modules={[Autoplay, Pagination, Navigation]}
             spaceBetween={0}
-            slidesPerView={1}
+            slidesPerView={1.09}
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
+            style={{marginLeft:"8%",marginRight:"20%",width:"90%"}}
             navigation
           >
-            <SwiperSlide>
-              <img src={c1} alt="Slide 1" style={{ width: "100%" }} />
+            <SwiperSlide >
+              <img src={c1} alt="Slide 1" style={{ width: "90%", marginLeft:"10%",borderRadius:"50px"}} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={p2} alt="Slide 2" style={{ width: "100%" }} />
+              <img src={p2} alt="Slide 2" style={{ width: "90%", marginLeft:"10%",borderRadius:"50px"}} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={p3} alt="Slide 3" style={{ width: "100%" }} />
+              <img src={p3} alt="Slide 3" style={{ width: "90%", marginLeft:"10%",borderRadius:"50px" }} />
             </SwiperSlide>
           </Swiper>
         </div>
 
         {/* Recipe Search Section */}
+        <div className="section">
         <div className="recipe-search-container">
           <h2 className="search-title">WHAT CAN I HELP YOU FIND?</h2>
           <div className="search-bar-wrapper">
@@ -149,8 +153,9 @@ function Main() {
               </div>
             ))}
           </div>
+          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
