@@ -1,0 +1,149 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Slim&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    font-family: "Georgia", serif;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* App container */
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fdd9d5;
+    border-top: 1px solid #fff; 
+    border-bottom: 1px solid #fff;
+  }
+
+  /* Logo container to hold image and name */
+.logo-container {
+    display: flex; /* Aligns children (image and text) side-by-side */
+    align-items: center; /* Vertically center the image and text */
+  }
+  
+  /* Logo image styles */
+  .logoimg {
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+    object-fit: contain; /* Ensures the logo is fully visible */
+    cursor: pointer; /* Interactivity */
+  }
+  
+  /* Logo text styles */
+  .logo {
+    margin-left: -10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive; /* Use the preferred font */
+  }
+  
+  
+  .highlight {
+    color: #C60105; /* Soft pink */
+  }
+  
+  .buttons button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .signin-btn {
+    margin-right: 15px;
+    background-color: #C60105;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+.hero {
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Take the full width of the container */
+    padding-left: 150px;
+    padding-top: 200px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+    
+  /* Hero Heading */
+  .hero h1 {
+    
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  /* Description */
+  .description {
+    max-width: 400px;
+    margin: 1.5rem 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Signup Button */
+  .signup-btn {
+    background-color: #C60105;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Already Account Text */
+  .already-account {
+    margin-top: 1.5rem;
+    color: #777;
+  }
+  
+  .login-link {
+    color: #C60105;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .container{
+    clip-path: polygon(00% 0%,100% 0%, 100% 100%, 25% 100%);
+    margin-left: 680px;
+    margin-top: -490px;
+    height: 660px;
+    width: 700px;
+    background-color: #ec665b;
+    z-index: 1;
+  }
+
+  .container .blue{
+    height: 750px !important;
+    width: 750px !important;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px  black;
+    
+  }
+  

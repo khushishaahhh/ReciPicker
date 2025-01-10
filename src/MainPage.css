@@ -1,0 +1,166 @@
+/* Body background */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+    to left bottom,
+    #fffd92,
+    #fff19c,
+    #ffe7aa,
+    #ffe0b8,
+    #ffdbc6,
+    #ffdcd2,
+    #ffdfdd,
+    #fde2e7,
+    #fceaf1,
+    #faf1f9,
+    #fbf8fd,
+    #ffffff
+  );
+}
+
+main {
+  padding-bottom: 50px;
+  margin-top: 60px; /* Added margin for spacing */
+}
+
+/* Section container to ensure the 'WHAT CAN I HELP YOU FIND?' section is not hidden */
+.section {
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.limg {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.logot {
+  margin-left: -30px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+
+.hlight {
+  color: #1e725a;
+}
+
+/* Right-side container */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-right: 250px;
+  width: 100%;
+}
+
+/* Search bar */
+.search-bar-container {
+  width: auto;
+  margin-right: 70px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e725a;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  position: relative;
+  margin-left: 30px;
+}
+
+.dropdown-link {
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #1e725a;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 100;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #0d4235;
+}
+
+/* Slider section */
+.slider {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Added margin to prevent overlap with search section */
+.slider1 .overlay {
+  margin-bottom: 20px;
+  z-index: 1;
+}

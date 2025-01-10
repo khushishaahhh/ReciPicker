@@ -1,0 +1,33 @@
+/* Container for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  position: relative;
+}
+
+/* Search input field */
+.search-input {
+  border: none;
+  outline: none;
+  flex: 1; /* Take the remaining space */
+  font-style: italic;
+  font-size: 1rem;
+  color: #333;
+  background-color: transparent;
+}
+
+/* Search icon */
+.search-icon {
+  color: #5e1f50; /* Dark purple */
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Placeholder text color */
+.search-input::placeholder {
+  color: #aaa;
+}

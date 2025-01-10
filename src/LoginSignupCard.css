@@ -1,0 +1,74 @@
+/* Background Container */
+.background-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://source.unsplash.com/1600x900/?food");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent gray overlay */
+  z-index: 1;
+}
+
+/* Card Container */
+.card-container {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  perspective: 1000px;
+  z-index: 2;
+}
+
+/* Card */
+.card-container .card-front,
+.card-container .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Front Side */
+.card-container .card-front {
+  transform: rotateY(0deg);
+}
+
+/* Back Side */
+.card-container .card-back {
+  transform: rotateY(180deg);
+}
+
+/* Flipped State */
+.card-container.flipped .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-container.flipped .card-back {
+  transform: rotateY(0deg);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
