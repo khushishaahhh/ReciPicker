@@ -7,7 +7,8 @@ function Home() {
   return (
     <div className="app">
       {/* Navbar */}
-      <nav className="navbar">
+      <div className="navbar">
+      <nav>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logoimg" />
         <div className="logo">
@@ -19,9 +20,11 @@ function Home() {
           <button className="signin-btn">Sign In</button>
         </div>
       </nav>
-
+      </div>
       {/* Hero Section */}
       <div className="hero">
+        <div style={{display:"flex"}}>
+          <div>
         <h1>
           great <span className="highlight">Deals</span>,<br />
           for great <span className="highlight">Meals</span>
@@ -33,8 +36,12 @@ function Home() {
         <p className="already-account">
           Already have an account? <span className="login-link">Log in</span>
         </p>
+        </div>
+        <div>
         <div className="container">
           <img className="blue" src={blue} />
+        </div>
+        </div>
         </div>
       </div>
     </div>
