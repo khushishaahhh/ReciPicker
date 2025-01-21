@@ -110,19 +110,6 @@ function Main() {
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
-<<<<<<< HEAD
-            style={{marginLeft:"8%",marginRight:"20%",width:"90%"}}
-            navigation
-          >
-            <SwiperSlide >
-              <img src={c1} alt="Slide 1" style={{ width: "90%", marginLeft:"10%",borderRadius:"50px"}} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={p2} alt="Slide 2" style={{ width: "90%", marginLeft:"10%",borderRadius:"50px"}} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={p3} alt="Slide 3" style={{ width: "90%", marginLeft:"10%",borderRadius:"50px" }} />
-=======
             style={{ marginLeft: "8%", marginRight: "20%", width: "90%" }}
             navigation
           >
@@ -158,40 +145,12 @@ function Main() {
                   borderRadius: "50px",
                 }}
               />
->>>>>>> f77cf29 (Update the file changes to [describe changes])
             </SwiperSlide>
           </Swiper>
         </div>
 
         {/* Recipe Search Section */}
         <div className="section">
-<<<<<<< HEAD
-        <div className="recipe-search-container">
-          <h2 className="search-title">WHAT CAN I HELP YOU FIND?</h2>
-          <div className="search-bar-wrapper">
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Search..."
-            />
-            <button className="search-button">
-              <i className="fa fa-search"></i>
-            </button>
-            <button className="browse-button">
-              BROWSE THE RECIPE INDEX &raquo;
-            </button>
-          </div>
-
-          <div className="categories-container">
-            {categories.map((category, index) => (
-              <div key={index} className="category-item">
-                <img
-                  src={category.image}
-                  alt={category.name}
-                  className="category-image"
-                />
-                <p className="category-name">{category.name}</p>
-=======
           <div className="recipe-search-container">
             <div style={{ display: "flex", marginLeft: "27.5%" }}>
               <h2 className="search-title">WHAT CAN I HELP YOU FIND?</h2>
@@ -209,7 +168,6 @@ function Main() {
                 <button className="browse-button">
                   BROWSE THE RECIPE INDEX &raquo;
                 </button>
->>>>>>> f77cf29 (Update the file changes to [describe changes])
               </div>
             </div>
             <div className="categories-container">
@@ -224,7 +182,6 @@ function Main() {
                 </div>
               ))}
             </div>
-          </div>
           </div>
         </div>
       </div>
