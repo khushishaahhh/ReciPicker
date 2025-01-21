@@ -7,6 +7,8 @@ import c3 from "./assets/pancake.jpg";
 import p1 from "./assets/p1.jpg";
 import p2 from "./assets/p2.jpg";
 import p3 from "./assets/spageti.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react"; // Swiper core components
 import { Autoplay, Pagination, Navigation } from "swiper/modules"; // Swiper modules
 import "swiper/css"; // Basic Swiper styles
@@ -108,6 +110,7 @@ function Main() {
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
+<<<<<<< HEAD
             style={{marginLeft:"8%",marginRight:"20%",width:"90%"}}
             navigation
           >
@@ -119,12 +122,50 @@ function Main() {
             </SwiperSlide>
             <SwiperSlide>
               <img src={p3} alt="Slide 3" style={{ width: "90%", marginLeft:"10%",borderRadius:"50px" }} />
+=======
+            style={{ marginLeft: "8%", marginRight: "20%", width: "90%" }}
+            navigation
+          >
+            <SwiperSlide>
+              <img
+                src={c1}
+                alt="Slide 1"
+                style={{
+                  width: "90%",
+                  marginLeft: "10%",
+                  borderRadius: "50px",
+                }}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={p2}
+                alt="Slide 2"
+                style={{
+                  width: "90%",
+                  marginLeft: "10%",
+                  borderRadius: "50px",
+                }}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={p3}
+                alt="Slide 3"
+                style={{
+                  width: "90%",
+                  marginLeft: "10%",
+                  borderRadius: "50px",
+                }}
+              />
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
             </SwiperSlide>
           </Swiper>
         </div>
 
         {/* Recipe Search Section */}
         <div className="section">
+<<<<<<< HEAD
         <div className="recipe-search-container">
           <h2 className="search-title">WHAT CAN I HELP YOU FIND?</h2>
           <div className="search-bar-wrapper">
@@ -150,8 +191,39 @@ function Main() {
                   className="category-image"
                 />
                 <p className="category-name">{category.name}</p>
+=======
+          <div className="recipe-search-container">
+            <div style={{ display: "flex", marginLeft: "27.5%" }}>
+              <h2 className="search-title">WHAT CAN I HELP YOU FIND?</h2>
+              <div className="search-bar-wrapper">
+                <div className="search-bar">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    className="search-input"
+                  />
+                  <div className="search-button">
+                    <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                  </div>
+                </div>
+                <button className="browse-button">
+                  BROWSE THE RECIPE INDEX &raquo;
+                </button>
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
               </div>
-            ))}
+            </div>
+            <div className="categories-container">
+              {categories.map((category, index) => (
+                <div key={index} className="category-item">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="category-image"
+                  />
+                  <p className="category-name">{category.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 /* Global styles */
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Slim&display=swap');
 
   
@@ -26,9 +27,38 @@
     border-bottom: 1px solid #fff;
     height: 100px;
   }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Slim&display=swap");
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
 
-  /* Logo container to hold image and name */
+/* App container */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+/* Navbar styles */
+.navbar nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fdd9d5;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  height: 100px;
+}
+
+/* Logo container to hold image and name */
 .logo-container {
+<<<<<<< HEAD
     display: flex; /* Aligns children (image and text) side-by-side */
     align-items: center; /* Vertically center the image and text */
     margin-left: 2%;
@@ -153,3 +183,126 @@
     
   }
   
+=======
+  display: flex; /* Aligns children (image and text) side-by-side */
+  align-items: center; /* Vertically center the image and text */
+  margin-left: 2%;
+}
+
+/* Logo image styles */
+.logoimg {
+  height: 150px;
+  object-fit: contain; /* Ensures the logo is fully visible */
+  cursor: pointer; /* Interactivity */
+  margin-left: -20%;
+}
+
+/* Logo text styles */
+.logo {
+  margin-left: -10px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive; /* Use the preferred font */
+}
+
+.highlight {
+  color: #c60105; /* Soft pink */
+}
+
+.buttons {
+  display: flex;
+  margin-right: 2%;
+}
+
+.login-btn {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  margin-right: 10%;
+  width: 120px;
+  height: 40px;
+  font-size: 20px !important;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.507);
+}
+
+.signin-btn {
+  margin-right: 15px;
+  background-color: #c60105;
+  color: #fff;
+  border-radius: 5px;
+  width: 120px;
+  font-size: 20px !important;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.507);
+}
+
+/* Hero Section */
+.hero {
+  margin-left: 10%;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Take the full width of the container */
+  padding-left: 150px;
+  padding-top: 120px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Hero Heading */
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 10%;
+}
+
+/* Description */
+.description {
+  max-width: 400px;
+  margin: 1.5rem 0;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Signup Button */
+.signup-btn {
+  background-color: #c60105;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Already Account Text */
+.already-account {
+  margin-top: 1.5rem;
+  color: #777;
+}
+
+.login-link {
+  color: #c60105;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container {
+  clip-path: polygon(00% 0%, 100% 0%, 100% 100%, 25% 100%);
+  margin-left: 440px;
+  margin-top: -150px;
+  width: 780px;
+  background-color: #ec665b;
+  z-index: 1;
+  height: 900px;
+  position: absolute;
+}
+
+.container .blue {
+  height: 900px !important;
+  width: 800px !important;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px black;
+}
+>>>>>>> f77cf29 (Update the file changes to [describe changes])

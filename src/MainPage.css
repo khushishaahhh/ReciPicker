@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 html, body {
+=======
+html,
+body {
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
   height: 100%;
   margin: 0;
   padding: 0;
@@ -35,9 +40,13 @@ html, body {
   margin-top: 60px; /* Added margin for spacing */
   min-height: 100vh; /* Make sure it expands to fit content */
   overflow-x: hidden; /* Allow scrolling if needed */
+<<<<<<< HEAD
 
 }
 
+=======
+}
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
 
 /* Navbar styles */
 .navbar {
@@ -178,8 +187,13 @@ html, body {
   border-radius: 50%; /* Optional: Circular buttons */
 }
 
+<<<<<<< HEAD
 .swiper-button-next{
   margin-left:95%;
+=======
+.swiper-button-next {
+  margin-left: 95%;
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
   margin-top: 0% !important;
   position: relative;
   z-index: 100;
@@ -190,8 +204,13 @@ html, body {
   background-color: #ffffff;
   color: red !important;
 }
+<<<<<<< HEAD
 .swiper-button-prev{
   margin-left:0%;
+=======
+.swiper-button-prev {
+  margin-left: 0%;
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
   margin-top: 0% !important;
   position: relative;
   z-index: 999 !important;
@@ -204,13 +223,18 @@ html, body {
 }
 /* Section container to ensure the 'WHAT CAN I HELP YOU FIND?' section is not hidden */
 .section {
+<<<<<<< HEAD
   width:100%;
+=======
+  width: 100%;
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
   min-height: 100vh;
   box-sizing: border-box;
   z-index: 1;
   position: relative;
   overflow-x: hidden;
 }
+<<<<<<< HEAD
 .blurcon{
   margin-left: -2% ;
   position: absolute;
@@ -219,3 +243,43 @@ html, body {
   background: linear-gradient(to right, #ffdfdd, rgba(255, 255, 255, 0)); /* Fading effect */
   z-index: 2;
 }
+=======
+/* Container for the search bar */
+.body .search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  width: 250px;
+  height: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+/* Search input field */
+.body .search-input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  flex: 1; /* Take the remaining space */
+  font-style: italic;
+  font-size: 1rem;
+  color: #333;
+  background-color: #ffffff;
+}
+/* Search icon */
+.body .search-icon {
+  color: #5e1f50; /* Dark purple */
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Placeholder text color */
+.body .search-input::placeholder {
+  color: #aaa;
+}
+>>>>>>> f77cf29 (Update the file changes to [describe changes])

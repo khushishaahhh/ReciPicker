@@ -1,16 +1,20 @@
 /* Container for the search bar */
-.search-bar {
+.search1 .search-bar {
   display: flex;
   align-items: center;
   border: 2px solid #333;
   border-radius: 15px;
   padding: 0.5rem 1rem;
+<<<<<<< HEAD
   width: 300px; 
+=======
+  width: 300px;
+>>>>>>> f77cf29 (Update the file changes to [describe changes])
   position: relative;
 }
 
 /* Search input field */
-.search-input {
+.search1 .search-input {
   border: none;
   outline: none;
   flex: 1; /* Take the remaining space */
@@ -21,13 +25,13 @@
 }
 
 /* Search icon */
-.search-icon {
+.search1 .search-icon {
   color: #5e1f50; /* Dark purple */
   font-size: 1.2rem;
   cursor: pointer;
 }
 
 /* Placeholder text color */
-.search-input::placeholder {
+.search1 .search-input::placeholder {
   color: #aaa;
 }
